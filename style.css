@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+html {
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .3s ;
+    padding: 15px;
+    z-index: 100;
+}
+
+header.sticky {
+    background-color: #04356A;
+}
+
+.logo {
+    transition: .3s;
+    margin-inline: 50px;
+    font-size: 0rem;
+    text-decoration: none;
+    color: #eaeaea;
+    font-weight: bolder;
+}
+
+.sticky .logo {
+    font-size: 1.5rem;
+    margin-inline: 20px 50px;
+}
+
+.sticky .logo {
+    cursor: pointer;
+}
+
+header.sticky:hover a#logo.logo{
+    font-size: 2rem;
+    margin-inline: 8px 35px;
+    padding: 5px;
+}
+
+.login {
+    margin-inline: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #eaeaee;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    padding-right: 40px;
+}
+
+header ul li a {
+    font-size: large;
+    text-decoration: none;
+    color: #eaeaea;
+    font-weight: bolder;
+}
+
+header ul li a:hover {
+    color: #04356A;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+header div button {
+    padding: 9px 20px;
+    margin-inline: 20px 100px;
+    background-color: dodgerblue;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    border: 4px solid #0164c1;
+    border-radius: 15px;
+}
+
+.block {
+    background: linear-gradient(#04356A, #0164c1);
+    padding: 36px;
+}
+
+section {
+    background: linear-gradient(#0164c1, #66d6fb, #d0f3ff, #fff, #fb8c05);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section div {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    height: 210px;
+    transform: translateY(100px);
+    pointer-events: none;
+}
+
+#title {
+    position: absolute;
+    color: white;
+    pointer-events: none;
+}
+
+section div h2 {
+    font-size: 2.7rem;
+}
+
+section div p {
+    transform: translateY(60px);
+    font-size: 1.2rem;
+}
+
+section div input {
+    position: absolute;
+    width: 60%;
+    padding: 15px 25px;
+    border: 5px solid #7e7e7e;
+    border-radius: 30px;
+    font-size: larger;
+    transform: translateY(110px);
+    pointer-events: visible;
+}
+
+#triangle {
+    position: absolute;
+    transform: translateY(-140px);
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 20px solid white;
+}
+
+#triangle:hover {
+    transition: .3s;
+    cursor: pointer;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-top: 25px solid white;
+}
+
+.sec {
+    background-color: white;
+    position: relative;
+    padding-inline: 10px;
+}
+
+.sec ::-webkit-scrollbar{
+    display: none;
+}
+
+footer {
+    background-color: #04356A;
+    width: 100%;
+    height: 300px;
+
+}
+
+footer P {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: white;
+    font-weight: large;
+}
+
+.content {
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    border-radius: 15px;
+    scrollbar-width: none;
+    height: auto;
+}
+
+div.img {
+    display: inline-block;
+    height: 200px;
+    border-radius: 15px;
+    margin-inline: 20px;
+}
+
+div.img .img {
+    height: 200px;
+    width: fit-content;
+    
+}
+
+img.img:hover {
+    transform: scale(1.05);
+}
